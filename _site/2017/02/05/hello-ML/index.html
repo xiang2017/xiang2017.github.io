@@ -10,7 +10,7 @@
     <meta name="keywords"  content="关键字1, 关键字2">
     <meta name="theme-color" content="#000000">
     
-    <title>Hello 2015  - by Hux - 祥祥的博客</title>
+    <title>开始时的碎碎念 - 祥祥的博客</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -19,7 +19,7 @@
     <link rel="shortcut icon" href="/img/favicon.ico">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="http://localhost:4000/2015/01/29/hello-2015/">
+    <link rel="canonical" href="http://localhost:4000/2017/02/05/hello-ML/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -155,13 +155,13 @@
 
     <!-- Image to hack wechat -->
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="/img/post-bg-2015.jpg" width="0" height="0"> -->
+<!-- <img src="/img/post-bg-2017.jpg" width="0" height="0"> -->
 
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
         position: relative;
-        background-image: url('/img/post-bg-2015.jpg')
+        background-image: url('/img/post-bg-2017.jpg')
     }
 
     
@@ -174,15 +174,15 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/#生活" title="生活">生活</a>
+                        <a class="tag" href="/tags/#机器学习" title="机器学习">机器学习</a>
                         
                     </div>
-                    <h1>Hello 2015  - by Hux</h1>
+                    <h1>开始时的碎碎念</h1>
                     
                     
-                    <h2 class="subheading"> "Hello World, Hello Blog"</h2>
+                    <h2 class="subheading">关于机器学习的一些碎碎念</h2>
                     
-                    <span class="meta">Posted by Hux on January 29, 2015</span>
+                    <span class="meta">Posted by Xiang on February 5, 2017</span>
                 </div>
             </div>
         </div>
@@ -201,72 +201,19 @@
                 post-container">
 
 				<blockquote>
-  <p>“Yeah It’s on. ”</p>
+  <p>“Ok,let’s start!”</p>
 </blockquote>
 
-<h2 id="前言">前言</h2>
-
-<p>Hux 的 Blog 就这么开通了。</p>
-
-<p><a href="#build">跳过废话，直接看技术实现 </a></p>
-
-<p>2015 年，Hux 总算有个地方可以好好写点东西了。</p>
-
-<p>作为一个程序员， Blog 这种轮子要是挂在大众博客程序上就太没意思了。一是觉得大部分 Blog 服务都太丑，二是觉得不能随便定制不好玩。之前因为太懒没有折腾，结果就一直连个写 Blog 的地儿都没有。</p>
-
-<p>在玩了一段时间知乎之后，答题的快感又激起了我开博客的冲动。之前的<a href="http://huangxuan.me/portfolio">个人网站</a>是作品集形式的（现在集成进来了），并不适合用来写博文，一不做二不休，花一天搞一个吧！</p>
-
-<p id="build"></p>
-<hr />
-
-<h2 id="正文">正文</h2>
-
-<p>接下来说说搭建这个博客的技术细节。</p>
-
-<p>正好之前就有关注过 <a href="https://pages.github.com/">GitHub Pages</a> + <a href="http://jekyllrb.com/">Jekyll</a> 快速 Building Blog 的技术方案，非常轻松时尚。</p>
-
-<p>其优点非常明显：</p>
-
+<p>机器学习的一些资源</p>
 <ul>
-  <li><strong>Markdown</strong> 带来的优雅写作体验</li>
-  <li>非常熟悉的 Git workflow ，<strong>Git Commit 即 Blog Post</strong></li>
-  <li>利用 GitHub Pages 的域名和免费无限空间，不用自己折腾主机
-    <ul>
-      <li>如果需要自定义域名，也只需要简单改改 DNS 加个 CNAME 就好了</li>
-    </ul>
-  </li>
-  <li>Jekyll 的自定制非常容易，基本就是个模版引擎</li>
+  <li><a href="https://www.coursera.org/learn/machine-learning">Coursera上的机器学习课程</a>，斯坦福大学教授 Andrew Ng（对，就是百度的吴恩达）的课程，内容由浅入深，并且有一些练习题辅助理解。强烈推荐！！！ （使用软件，Matlab or Octave）</li>
+  <li><a href="http://wiki.jikexueyuan.com/project/tensorflow-zh/">极客学院有tensorflow的中文文档</a> 版本和内容有点旧了，食用时注意一些过期的方法。</li>
+  <li>知乎上有很多不错的关于机器学习的文章。</li>
+  <li>一些订阅号 机器学习研究会 机器之心。</li>
+  <li><a href="http://cs231n.stanford.edu/">计算机视觉-卷积神经网络</a></li>
 </ul>
 
-<p>本来觉得最大的缺点可能是 GitHub 在国内访问起来太慢，所以第二天一起床就到 GitCafe(Chinese GitHub Copy，现在被 Coding 收购了) 迁移了一个<a href="http://huxpro.coding.me">镜像</a>出来，结果还是巨慢。</p>
-
-<p>哥哥可是个前端好嘛！ 果断开 Chrome DevTool 查了下网络请求，原来是 <strong>pending 在了 Google Fonts</strong> 上，页面渲染一直被阻塞到请求超时为止，难怪这么慢。<br />
-忍痛割爱，只好把 Web Fonts 去了（反正超时看到的也只能是 fallback ），果然一下就正常了，而且 GitHub 和 GitCafe 对比并没有感受到明显的速度差异，虽然 github 的 ping 值明显要高一些，达到了 300ms，于是用 DNSPOD 优化了一下速度。</p>
-
-<hr />
-
-<p>配置的过程中也没遇到什么坑，基本就是 Git 的流程，相当顺手</p>
-
-<p>大的 Jekyll 主题上直接 fork 了 Clean Blog（这个主题也相当有名，就不多赘述了。唯一的缺点大概就是没有标签支持，于是我给它补上了。）</p>
-
-<p>本地调试环境需要 <code class="highlighter-rouge">gem install jekyll</code>，结果 rubygem 的源居然被墙了……后来手动改成了我大淘宝的镜像源才成功</p>
-
-<p>Theme 的 CSS 是基于 Bootstrap 定制的，看得不爽的地方直接在 Less 里改就好了（平时更习惯 SCSS 些），<strong>不过其实我一直觉得 Bootstrap 在移动端的体验做得相当一般，比我在淘宝参与的团队 CSS 框架差多了……</strong>所以为了体验，也补了不少 CSS 进去</p>
-
-<p>最后就进入了耗时反而最长的<strong>做图、写字</strong>阶段，也算是进入了<strong>写博客</strong>的正轨，因为是类似 Hack Day 的方式去搭这个站的，所以折腾折腾着大半夜就过去了。</p>
-
-<p>第二天考虑中文字体的渲染，fork 了 <a href="http://www.typeisbeautiful.com/">Type is Beautiful</a> 的 <code class="highlighter-rouge">font</code> CSS，调整了字号，适配了 Win 的渣渲染，中英文混排效果好多了。</p>
-
-<h2 id="后记">后记</h2>
-
-<p>回顾这个博客的诞生，纯粹是出于个人兴趣。在知乎相关问题上回答并获得一定的 star 后，我决定把这个博客主题当作一个小小的开源项目来维护。</p>
-
-<p>在经历 v1.0 - v1.5 的蜕变后，这个博客主题愈发完整，不但增加了诸多 UI 层的优化（opinionated）；在代码层面，更加丰富的配置项也使得这个主题拥有了更好的灵活性与可拓展性。而作为一个开源项目，我也积极的为其完善文档与解决 issue。</p>
-
-<p>如果你恰好逛到了这里，希望你也能喜欢这个博客主题。</p>
-
-<p>—— Hux 后记于 2015.10</p>
-
+<p>加我微信，一起学习：<strong>nine__mine</strong></p>
 
 
                 <hr style="visibility: hidden;">
@@ -275,21 +222,17 @@
                 <!-- 多说 Share start -->
                 <div class="ds-share"
                     style="text-align: right"
-                    data-thread-key="/2015/01/29/hello-2015"
-                    data-title="Hello 2015  - by Hux"
-                    data-url="http://localhost:4000/2015/01/29/hello-2015/"
-                    data-images="http://localhost:4000/img/post-bg-2015.jpg"
+                    data-thread-key="/2017/02/05/hello-ML"
+                    data-title="开始时的碎碎念"
+                    data-url="http://localhost:4000/2017/02/05/hello-ML/"
+                    data-images="http://localhost:4000/img/post-bg-2017.jpg"
                     data-content="
-  “Yeah It’s on. ”
+  “Ok,let’s start!”
 
 
-前言
+机器学习的一些资源
 
-Hux 的 Blog 就这么开通了。
-
-跳过废话，直接看技术实现 
-
-2015 年，Hux 总算有个地... | 祥祥的博客 " >
+  Coursera上的机器学习课程，斯坦福大学教授 Andrew Ng（对，就是百度... | 祥祥的博客 " >
                     <div class="ds-share-inline">
                       <style> 
                         .ds-share-icons-16 {display:none;} 
@@ -311,13 +254,13 @@ Hux 的 Blog 就这么开通了。
 
                 <ul class="pager">
                     
-                    
-                    <li class="next">
+                    <li class="previous">
                         <a href="/2017/01/17/hello-blog/" data-toggle="tooltip" data-placement="top" title="Hello Blog">
-                        Next<br>
+                        Previous<br>
                         <span>Hello Blog</span>
                         </a>
                     </li>
+                    
                     
                 </ul>
 
@@ -326,9 +269,9 @@ Hux 的 Blog 就这么开通了。
                 <!-- 多说评论框 start -->
                 <div class="comment">
                     <div class="ds-thread"
-                        data-thread-key="/2015/01/29/hello-2015"
-                        data-title="Hello 2015  - by Hux"
-                        data-url="http://localhost:4000/2015/01/29/hello-2015/" >
+                        data-thread-key="/2017/02/05/hello-ML"
+                        data-title="开始时的碎碎念"
+                        data-url="http://localhost:4000/2017/02/05/hello-ML/" >
                     </div>
                 </div>
                 <!-- 多说评论框 end -->
